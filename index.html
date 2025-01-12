@@ -44,6 +44,8 @@
   <script>
     function generateLinks() {
       const githubUrl = document.getElementById("githubUrl").value.trim();
+         if (!githubUrl.startsWith("https://github.com/")) {
+        alert("Please enter a valid GitHub repository URL.");
       
         return;
       }
